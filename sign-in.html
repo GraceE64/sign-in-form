@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Centering form container */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f2f2f2;
+        }
+
+        /* Form container styling */
+        .SignupForm {
+            background-color: #ffffff;
+            padding: 20px 30px;
+            width: 120%;
+            max-width: 400px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Form heading */
+        .SignupForm .heading {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333333;
+        }
+
+        /* Image styling */
+        .SignupForm img {
+            width: 100px;
+            margin-bottom: 15px;
+        }
+
+        /* Input fields and labels */
+        .SignupForm label {
+            display: block;
+            font-size: 14px;
+            color: #333333;
+            margin-top: 10px;
+        }
+
+        .SignupForm input[type="text"],
+        .SignupForm input[type="email"],
+        .SignupForm input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        /* Button styling */
+        .SignupForm button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: #ffffff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .SignupForm button:hover {
+            background-color: #45a049;
+        }
+
+        /* Link styling */
+        .SignupForm p {
+            font-size: 14px;
+            color: #666666;
+            margin-top: 15px;
+        }
+
+        .SignupForm p a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .SignupForm p a:hover {
+            text-decoration: underline;
+        }
+
+        /* Error message styling */
+        .SignupForm .error {
+            color: red;
+            font-size: 12px;
+            margin-top: 5px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <!-- Signup Form -->
+        <form action="login-in-to-snapchat" class="SignupForm">
+            <img src="./snap.jpg.jpg" alt="Profile Picture">
+            <h1 class="heading">Log Into Snapchat</h1>
+
+            <label for="name">Name:</label>
+            <input type="text" id="Name" name="name" required> <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required> <br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="passwordHint" name="password" required><br>
+
+            <label for="confirmpassword">Confirm Password:</label>
+            <input type="password" id="confirmpassword" name="confirmpassword" required>
+            <span id="confirmpassword" class="error"></span>
+            
+            <button type="submit">Signup</button>
+        </form>
+        
+        <p>Already have an account? <a href="#">Login here</a></p>
+    </center>
+</body>
+</html>
